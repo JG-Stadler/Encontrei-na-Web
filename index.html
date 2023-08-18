@@ -10,7 +10,53 @@
     <script src="js/script.js" defer></script>
 </head>
 
-<body  onload="LoadProducts()">
+<style>
+    #load{
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: xx-large;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #112B3D;
+        z-index: 4;
+    }
+    .loader {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #FFF;
+    border-bottom-color: #0044ff;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+</style>
+
+<body  onload="LoadProducts(),HideLoad()">
+
+        <div id="load">
+            <p>carregando</p>
+            <span class="loader"></span>
+        </div>
+
     <header class="menu-principal">
         <div class="logo">
             <img src="assets/img/polotno.png" alt="Logo encontrei na Web">

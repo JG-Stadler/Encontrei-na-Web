@@ -55,6 +55,16 @@ const produtos = [
         link: "https://shope.ee/7UnLtR9e4W"
     }
 ]
+// Organização em ordem alfabética
+{
+        produtos.sort((a,b)=>{
+            if(a.nome<b.nome){
+                return -1;
+            }
+            else{ return true}
+        });
+}
+    // função geradora de produtos
 {
     function LoadProducts(){
            for(let i=0; i<produtos.length; i++){
@@ -84,26 +94,20 @@ const produtos = [
                     card.appendChild(valor);
            }
     }
-
-    // mecanismo de busca
-
-    function Buscar(){
-        var input = document.getElementById("input");
-                        input = input.value.toLowerCase();
-
-            for (let i = 0; i < produtos.length; i++) {
-                    if(!produtos[i].nome.includes(input)){
-                            conteiner.removeChild(produtos[i])
-                    }               
-            }
- }
 }
-
 // Declaração de itens sem função
-
+{
 const itemU = document.getElementById("function-undefined");
 itemU.addEventListener("click",()=>{
 
 alert("Esta função não está disponivel no momento.");
 
 });
+}
+// sistema de carregamento
+{
+    const load = document.getElementById("load");
+    function HideLoad(){
+        load.style.display = "none";
+    }
+}
