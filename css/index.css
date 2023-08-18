@@ -1,0 +1,289 @@
+/* importação de fontes */
+@font-face {
+    font-family: Logos;
+    src: url(../assets/fonts/ND\ LOGOS\ REGULAR.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+/* inicio do menu principal */
+.logo{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    max-width: 90vw;
+}
+.logo:hover{
+    animation: shake .5s linear;
+    cursor: default;
+}
+.logo>img{
+    width: 200px;
+}
+.logo-name{
+    font-family: Logos, Roboto, arial;
+    text-align: center;
+    transform: rotate(-15deg) translate(-40px);
+    color: #fff;
+}
+.menu-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-image:linear-gradient(-40deg, var(--azul-claro1), var(--azul-escuro1));
+}
+.navegation{
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family:  Roboto,sans-serif;
+    font-weight: 700;
+}
+.nav-item{
+    transition: .5s;
+}
+.nav-item:hover{
+    transform: scale(1.3);
+    text-shadow: 0 0 5px #fff;
+}
+.menu-button{
+    display: none;
+}
+
+/* animações */
+
+@keyframes shake {
+            0%{
+                transform: rotate(0);
+            }
+            25%{
+                transform: rotate(7deg);
+            }
+            50%{
+                transform: rotate(0);
+            }
+            75%{
+                transform: rotate(-7deg);
+            }
+            100%{
+                transform: rotate(-0);
+            }
+}
+
+/* adaptação responsiva */
+
+@media(max-width:1000px){
+    .logo:hover{
+        animation: none;
+    }
+    .menu-nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--azul-escuro2);
+        display: flex;
+        align-items: center;
+        transform: scalex(0);
+        transition: .5s transform;
+        transform-origin: left;
+        z-index: 2;
+    }
+    .navegation{
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        margin-left: 40px;
+    }
+    .nav-link{
+        font-size: x-large;
+        color: #ffffffbb;
+    }
+    .nav-link:hover{
+        color: #fff;
+    }
+    .nav-item:hover{
+        transform: translateX(10px) scale(1);
+        text-shadow: none;
+        color: #fff;
+    }
+    .menu-button{
+        width: 45px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: flex-start;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .menu-button>span{
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition: .5s;
+    }
+
+    @media(max-width:600px){
+        .logo{
+            flex-direction: column;
+        }
+        .logo-name{
+            transform: translateX(20px) translateY(-30px) rotate(-15deg);
+        }
+    }
+    @media(max-width:400px){
+            .menu-principal{
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu-button{
+                align-self: center;
+                margin: 55px;
+            }
+            .menu-button-active{
+                position: fixed;
+                top: 50px ;
+                right: 10px;
+                transform: translateX(-50%);
+            }
+    }
+    /* configurações de ativação do menu */
+
+    .menu-button-active{
+        z-index: 2;
+    }
+  .menu-button-active> .line1{
+     transform: rotate(45deg) translate(5px, 20px);
+  }
+    .menu-button-active> .line2{
+        display:none;
+    }
+  .menu-button-active> .line3{
+    transform: rotate(-45deg) translate(5px, -21px);
+ }
+ .menu-nav-active{
+    transform: scalex(1);
+ }
+}
+/* fim do menu principal */
+
+/* cards de produtos */
+
+#catalogo_produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+.produto{
+ padding: 20px 15px;
+ border-radius: 10px;
+ background-color: #00000011;
+ width: 200px;
+ max-width: 90vw;
+ min-height: 300px;
+ border: solid var(--azul-escuro2);
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ text-decoration: none;
+ color: black;
+ transition: .5s transform;
+ margin: 30px 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-evenly;
+}
+.produto:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px var(--azul-claro1);
+}
+.nome-produto{
+   color: var(--azul);
+   font-size: medium;
+   margin-bottom: 20px;
+}
+.ft-produto{
+    width: 100%;
+    border: solid var(--azul-claro1) 1px;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+    margin-bottom: 15px
+}
+
+.valor{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid black 2px;
+    width: fit-content;
+    background-color: var(--azul-escuro1);
+    color: #fff;
+    font-weight: bold;
+    font-size: xx-large;
+    position: relative;
+    justify-self: flex-end;
+}
+.valor::after{
+    content: "A partir de:";
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: black;
+    font-size: small;
+}
+
+/* Confiurações do roda pé da pagina */
+
+.footer-pg{
+    background-color: rgb(41, 41, 41);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-footer{
+    width: 170px;
+}
+.menu-ft{
+    text-align: center;
+    padding: 30px 0;
+}
+.menu-ft a{
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+.footer-pg aside{
+    background-color: var(--azul-escuro2);
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.desc-serv{
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 85%;
+    margin-top: 40px;
+}
