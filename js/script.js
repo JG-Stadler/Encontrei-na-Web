@@ -19,7 +19,7 @@ const produtos = [
         link: "https://shope.ee/8KMRUfpf9u"
     },
     {
-        nome:"Fitas LED RGB 3528 Rolo 5m 3 com Fonte e Controle",
+        nome:"Fita de LED RGB 3528 Rolo 5m 3 com Fonte e Controle",
         valor: "24,79",
         img:"https://d2r9epyceweg5n.cloudfront.net/stores/001/365/699/products/fita-rgb-gadit1-77ca3cb2f48ccd2b8016492518691850-1024-1024.png",
         link: "https://shope.ee/40DSM66gcs"
