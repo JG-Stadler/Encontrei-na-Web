@@ -111,3 +111,26 @@ alert("Esta função não está disponivel no momento.");
         load.style.display = "none";
     }
 }
+
+// Mecanismo de busca
+{
+    var buscar = document.getElementById("buscar");
+
+        buscar.addEventListener("click",()=>{
+            var input = document.getElementById("input");
+                input = input.value.toLowerCase();
+            var prods = document.getElementsByClassName("produto");
+            var nomes = document.getElementsByClassName("nome-produto");
+
+    for(var i = 0; i<= prods.length; i++){
+        
+          if(!nomes[i].innerText.toLowerCase().includes(input)){
+            prods[i].style.display ="none";
+          }
+          else{
+            prods[i].style.display = ""
+          }
+    }
+ });
+
+}
