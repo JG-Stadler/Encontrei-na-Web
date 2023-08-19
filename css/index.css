@@ -287,3 +287,31 @@
     max-width: 85%;
     margin-top: 40px;
 }
+
+/* barra de busca */
+
+.search{
+    width: fit-content;
+    max-width: 90vw;
+    margin: 50px auto;
+}
+#input,#buscar{
+    font-size: x-large;
+    padding: 20px 25px;
+    border: solid black 2px;
+}
+#input{
+   border-radius: 35px 0 0 35px;
+}
+#buscar{
+    background-color: var(--azul-escuro1);
+    color: #fff;
+    border-radius: 0 35px 35px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+#buscar:hover{
+    background-color: var(--azul-claro2);
+    box-shadow: 0 0 5px var(--azul-claro2);
+    transform: translateX(10px);
+}

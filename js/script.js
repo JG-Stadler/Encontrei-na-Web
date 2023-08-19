@@ -37,7 +37,7 @@ const produtos = [
         link: "https://shope.ee/6fEEs1C5xo"
     },
     {
-        nome:"Chama Umidificador De Ar Difusor De Aroma Aromaterapia",
+        nome:"Chamas Umidificador De Ar Difusor De Aroma Aromaterapia",
         valor: "29,90",
         img:"https://a-static.mlcdn.com.br/450x450/umidificador-ar-difusor-oleo-essencial-chama-200ml-led-relet/relet/umidificador-pto-fogo-248/2ecc370069d9911a423de0d278e3cf20.jpeg",
         link: "https://shope.ee/9pBGeNZ6gv"
@@ -104,6 +104,7 @@ alert("Esta função não está disponivel no momento.");
 
 });
 }
+
 // sistema de carregamento
 {
     const load = document.getElementById("load");
@@ -123,7 +124,7 @@ alert("Esta função não está disponivel no momento.");
             var nomes = document.getElementsByClassName("nome-produto");
 
     for(var i = 0; i<= prods.length; i++){
-        
+
           if(!nomes[i].innerText.toLowerCase().includes(input)){
             prods[i].style.display ="none";
           }
@@ -133,4 +134,22 @@ alert("Esta função não está disponivel no momento.");
     }
  });
 
+}
+
+// 
+{
+    var menu = document.querySelector(".menu-nav");
+var button =document.querySelector(".menu-button");
+var body = document.querySelector("body");
+
+button.addEventListener("click",()=>{
+        button.classList.toggle("menu-button-active");
+        menu.classList.toggle("menu-nav-active");
+        if( body.style.overflow === "" ){
+                body.style.overflow = "hidden";
+        }
+        else{
+                body.style.overflow = "";
+        }
+});
 }
