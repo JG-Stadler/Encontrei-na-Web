@@ -294,7 +294,6 @@
     width: fit-content;
     max-width: 90vw;
     margin: 50px auto;
-    white-space: nowrap;
 }
 #input,#buscar{
     font-size: x-large;
@@ -315,25 +314,4 @@
     background-color: var(--azul-claro2);
     box-shadow: 0 0 5px var(--azul-claro2);
     transform: translateX(10px);
-}
-@media(max-width:650px) {
-    #input,#buscar{
-        font-size: medium;
-    }
-}
-@media(max-width:410px){
-    #input,#buscar{
-        width: 100%;
-        border-radius: 35px;
-        margin: 10px 0;
-    }
-    #buscar:hover{
-        transform: translate(0,0);
-    }
-    .search{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px auto;
-    }
 }
