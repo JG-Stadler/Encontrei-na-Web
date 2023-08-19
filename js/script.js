@@ -117,6 +117,12 @@ alert("Esta função não está disponivel no momento.");
 {
     var buscar = document.getElementById("buscar");
 
+            // for(var i=0;i<=prods.length;i++){
+            //         if(input === " "){
+            //             prods[i].style.display = ""
+            //         }
+            }
+
         buscar.addEventListener("click",()=>{
             var input = document.getElementById("input");
                 input = input.value.toLowerCase();
