@@ -147,9 +147,11 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .menu-button{
-                align-self: center;
-                margin: 55px;
+            .logo h1{
+                font-size: larger;
+            }
+            .logo img{
+                max-width: 65vw;
             }
             .menu-button-active{
                 position: fixed;
