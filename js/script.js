@@ -58,13 +58,13 @@ const produtos = [
         nome:"Selador de Plástico Portátil Para Cozinha",
         valor: "9,99",
         img:"https://www.bazardosaara.com.br/image/cache/data/7866889923761a-1150x850h.jpg",
-        link: "https://shope.ee/3puEknmSkY"
+        link: "https://shope.ee/10a3N07rdR"
     },
     {
         nome:"Garrafa De Água Squeeze Academia Com Adesivos",
         valor: "9,50",
         img:"https://images.tcdn.com.br/img/img_prod/1021421/garrafa_de_agua_squeeze_1_litro_615_1_6d98a46b0b5d8b7dc87b68f65fa6c0c0.jpg",
-        link: "https://shope.ee/10a3N07rdR"
+        link: "https://shope.ee/3puEknmSkY"
     }
 
 ]
