@@ -65,6 +65,30 @@ const produtos = [
         valor: "9,50",
         img:"https://images.tcdn.com.br/img/img_prod/1021421/garrafa_de_agua_squeeze_1_litro_615_1_6d98a46b0b5d8b7dc87b68f65fa6c0c0.jpg",
         link: "https://shope.ee/3puEknmSkY"
+    },
+    {
+        nome:"Tênis Bota Botinha Basquete Nike Jordan 1 High Unisex",
+        valor: "29,00",
+        img:"https://www.stylefeetbr.com.br/image/cache/catalog/foto%20de%20capa/1003-800x800.jpg",
+        link: "https://shope.ee/5fLy05FLou"
+    },
+    {
+        nome:"Tênis Nk Air Force Lv8",
+        valor: "59,90",
+        img:"https://cdn.awsli.com.br/600x450/1755/1755854/produto/87657524/6e0f808666.jpg",
+        link: "https://shope.ee/99vqAsNatt"
+    },
+    {
+        nome:"Tênis Unisex Cano Alto All Star Botinha Casual",
+        valor: "65,60",
+        img:"https://cdnv2.moovin.com.br/backinblack/imagens/produtos/det/tenis-converse-ct-all-star-core-hi-preto-5ff8077fcb1392d181b0c7469dea9336.jpg",
+        link: "https://shope.ee/8Ug9NxMrBY"
+    },
+    {
+        nome:"tenis nike dunk low cano baixo  Unisex basquete",
+        valor: "69,90",
+        img:"https://cdn.awsli.com.br/600x1000/1203/1203218/produto/168773852183a2346d2.jpg",
+        link: "https://shope.ee/4AXAEtz4bo"
     }
 
 ]
