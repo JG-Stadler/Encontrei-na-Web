@@ -67,13 +67,13 @@ const produtos = [
         link: "https://shope.ee/3puEknmSkY"
     },
     {
-        nome:"Tênis Bota Botinha Basquete Nike Jordan 1 High Unisex",
+        nome:"Tênis Nk Air Force Lv8",
         valor: "29,00",
         img:"https://www.stylefeetbr.com.br/image/cache/catalog/foto%20de%20capa/1003-800x800.jpg",
         link: "https://shope.ee/5fLy05FLou"
     },
     {
-        nome:"Tênis Nk Air Force Lv8",
+        nome:"Tênis Bota Botinha Basquete Nike Jordan 1 High Unisex",
         valor: "59,90",
         img:"https://cdn.awsli.com.br/600x450/1755/1755854/produto/87657524/6e0f808666.jpg",
         link: "https://shope.ee/99vqAsNatt"
