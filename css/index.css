@@ -94,7 +94,7 @@
         align-items: center;
         transform: scalex(0);
         transition: .5s transform;
-        transform-origin: left;
+        transform-origin: right;
         z-index: 2;
     }
     .navegation{
@@ -148,7 +148,7 @@
                 align-items: center;
             }
             .logo h1{
-                font-size: larger;
+                display:none;
             }
             .logo img{
                 max-width: 65vw;
@@ -249,7 +249,27 @@
     color: black;
     font-size: small;
 }
-
+@media(max-width:510px){
+    .produto{
+        width: 80vw;
+    }
+    .ft-produto{
+        height: 300px;
+        width: 300px;
+        max-width: 95%;
+    }
+    .nome-produto{
+        font-size: xx-large;
+    }
+    .valor{
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    .valor::after{
+        font-size: 25px;
+        top: -30px;
+    }
+}
 /* Confiurações do roda pé da pagina */
 
 .footer-pg{
@@ -317,20 +337,44 @@
     box-shadow: 0 0 5px var(--azul-claro2);
     transform: translateX(10px);
 }
-
+.lupa{
+    width: 30px;
+    display:none;
+}
 @media(max-width:600px){
-    #input,#buscar{
-        width: 100%;
-        border-radius: 35px;
-        margin: 10px 0;
+    #input{
+        border-radius: 40px;
+        width: 90vw;
+    }
+    #buscar{
+        position: absolute;
+        right: 3px;
+        height: 90%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        border: none;
     }
     #buscar:hover{
-        transform: translate(0,0);
+        background: none;
+        box-shadow: none;
+        transform: translate(0,-50%);
     }
     .search{
-        display: flex;
-        flex-direction: column;
+        position: relative;
         align-items: center;
-        margin: 10px auto;
+        margin: 20px auto;
+        width: fit-content;
+    }
+    .texto-busca{
+        display: none;
+    }
+    .lupa{
+        display: block;
+    }
+}
+@media(max-width:350px){
+    #input{
+        font-size: medium;
     }
 }
