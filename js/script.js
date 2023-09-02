@@ -85,10 +85,16 @@ const produtos = [
         link: "https://shope.ee/8Ug9NxMrBY"
     },
     {
-        nome:"tenis nike dunk low cano baixo  Unisex basquete",
+        nome:"Tênis nike dunk low cano baixo  Unisex basquete",
         valor: "69,90",
         img:"https://cdn.awsli.com.br/600x1000/1203/1203218/produto/168773852183a2346d2.jpg",
         link: "https://shope.ee/4AXAEtz4bo"
+    },
+    {
+        nome:"Relógio inteligente smartwatch D20 Y68 bluetooth monitor saúde coloca foto na tela",
+        valor: "24,90",
+        img:"https://i.zst.com.br/thumbs/12/6/d/1951250671.jpg",
+        link: "https://shope.ee/9UYxsJnAHM"
     }
 
 ]
