@@ -95,6 +95,12 @@ const produtos = [
         valor: "24,90",
         img:"https://i.zst.com.br/thumbs/12/6/d/1951250671.jpg",
         link: "https://shope.ee/9UYxsJnAHM"
+    },
+    {
+        nome:"Tênis Unisex VANS Old Skool Retro Skate",
+        valor: "39,90",
+        img:"https://convexo.com.br/files/product_image/file/5202/tenis-vans-old-skool-black-2.gif",
+        link: "https://shope.ee/3Af5wPgqlK"
     }
 
 ]
