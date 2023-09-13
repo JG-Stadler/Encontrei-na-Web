@@ -251,7 +251,7 @@
 }
 @media(max-width:510px){
     .produto{
-        width: 80vw;
+        width: 65vw;
     }
     .ft-produto{
         height: 300px;
@@ -259,7 +259,7 @@
         max-width: 95%;
     }
     .nome-produto{
-        font-size: xx-large;
+        font-size: x-large;
     }
     .valor{
         margin-top: 40px;
@@ -313,9 +313,12 @@
 /* barra de busca */
 
 .search{
-    width: fit-content;
     max-width: 90vw;
     margin: 50px auto;
+        position: relative;
+        align-items: center;
+        margin: 20px auto;
+        width: fit-content;
 }
 #input,#buscar{
     font-size: x-large;
@@ -323,58 +326,46 @@
     border: solid black 2px;
 }
 #input{
-   border-radius: 35px 0 0 35px;
+    border-radius: 40px;
 }
 #buscar{
-    background-color: var(--azul-escuro1);
-    color: #fff;
+    background: none;
     border-radius: 0 35px 35px 0;
     cursor: pointer;
     transition: .5s;
-}
-#buscar:hover{
-    background-color: var(--azul-claro2);
-    box-shadow: 0 0 5px var(--azul-claro2);
-    transform: translateX(10px);
+    position: absolute;
+    right: 3px;
+    height: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
 }
 .lupa{
     width: 30px;
-    display:none;
 }
 @media(max-width:600px){
     #input{
-        border-radius: 40px;
-        width: 90vw;
-    }
-    #buscar{
-        position: absolute;
-        right: 3px;
-        height: 90%;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #fff;
-        border: none;
-    }
-    #buscar:hover{
-        background: none;
-        box-shadow: none;
-        transform: translate(0,-50%);
-    }
-    .search{
-        position: relative;
-        align-items: center;
-        margin: 20px auto;
-        width: fit-content;
+        width: 70vw;
     }
     .texto-busca{
         display: none;
-    }
-    .lupa{
-        display: block;
     }
 }
 @media(max-width:350px){
     #input{
         font-size: medium;
+    }
+    .valor{
+        font-size: xx-large;
+    }
+    .valor::after{
+        font-size: x-large;
+    }
+}
+@media(max-width:500px){
+    .ft-produto{
+        width: 70vw;
+        height: 70vw;
     }
 }

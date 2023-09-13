@@ -78,8 +78,12 @@
     </header>
 
         <div class="search">
-            <input type="search" autocomplete="off" id="input" placeholder="Procurar Produtos">
-            <button id="buscar"><p class="texto-busca">Buscar</p>
+            <input type="text"
+             autocomplete="off" id="input" 
+             placeholder="Procurar Produtos"
+            onchange="Buscar()">
+            
+        <button onclick="Buscar()" id="buscar">
             <img src="assets/img/lupa.png" alt="lupa" class="lupa">
             </button>
         </div>

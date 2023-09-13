@@ -1,3 +1,22 @@
+// Mecanismo de busca
+{
+    function Buscar(){
+      let input = document.getElementById("input");
+      input = input.value.toLowerCase();
+  var prods = document.getElementsByClassName("produto");
+  var nomes = document.getElementsByClassName("nome-produto");
+
+for(var i = 0; i<= prods.length; i++){
+
+if(!nomes[i].innerText.toLowerCase().includes(input)){
+  prods[i].style.display ="none";
+}
+else{
+  prods[i].style.display = ""
+}
+}
+}
+}
 // sistema de carregamento
 {
     const load = document.getElementById("load");
@@ -66,31 +85,6 @@ alert("Esta função não está disponivel no momento.");
 
 });
 }
-
-
-// Mecanismo de busca
-{
-    var buscar = document.getElementById("buscar");
-
-        buscar.addEventListener("click",()=>{
-            var input = document.getElementById("input");
-                input = input.value.toLowerCase();
-            var prods = document.getElementsByClassName("produto");
-            var nomes = document.getElementsByClassName("nome-produto");
-
-    for(var i = 0; i<= prods.length; i++){
-
-          if(!nomes[i].innerText.toLowerCase().includes(input)){
-            prods[i].style.display ="none";
-          }
-          else{
-            prods[i].style.display = ""
-          }
-    }
- });
-
-}
-
 // Scripts do menu
 {
     var menu = document.querySelector(".menu-nav");
