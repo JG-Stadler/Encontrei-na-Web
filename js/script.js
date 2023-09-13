@@ -52,57 +52,59 @@ let conteiner = document.getElementById("catalogo_produtos");
                     valor.innerText = "R$" + ArrayProdutos[i].valor;
 
                     card.appendChild(valor);
+
+                    let produtos = JSON.stringify(ArrayProdutos);
            }
     }
 }
-// // Declaração de itens sem função
-// {
-// const itemU = document.getElementById("function-undefined");
-// itemU.addEventListener("click",()=>{
+// Declaração de itens sem função
+{
+const itemU = document.getElementById("function-undefined");
+itemU.addEventListener("click",()=>{
 
-// alert("Esta função não está disponivel no momento.");
+alert("Esta função não está disponivel no momento.");
 
-// });
-// }
+});
+}
 
 
-// // Mecanismo de busca
-// {
-//     var buscar = document.getElementById("buscar");
+// Mecanismo de busca
+{
+    var buscar = document.getElementById("buscar");
 
-//         buscar.addEventListener("click",()=>{
-//             var input = document.getElementById("input");
-//                 input = input.value.toLowerCase();
-//             var prods = document.getElementsByClassName("produto");
-//             var nomes = document.getElementsByClassName("nome-produto");
+        buscar.addEventListener("click",()=>{
+            var input = document.getElementById("input");
+                input = input.value.toLowerCase();
+            var prods = document.getElementsByClassName("produto");
+            var nomes = document.getElementsByClassName("nome-produto");
 
-//     for(var i = 0; i<= prods.length; i++){
+    for(var i = 0; i<= prods.length; i++){
 
-//           if(!nomes[i].innerText.toLowerCase().includes(input)){
-//             prods[i].style.display ="none";
-//           }
-//           else{
-//             prods[i].style.display = ""
-//           }
-//     }
-//  });
+          if(!nomes[i].innerText.toLowerCase().includes(input)){
+            prods[i].style.display ="none";
+          }
+          else{
+            prods[i].style.display = ""
+          }
+    }
+ });
 
-// }
+}
 
-// // Scripts do menu
-// {
-//     var menu = document.querySelector(".menu-nav");
-// var button =document.querySelector(".menu-button");
-// var body = document.querySelector("body");
+// Scripts do menu
+{
+    var menu = document.querySelector(".menu-nav");
+var button =document.querySelector(".menu-button");
+var body = document.querySelector("body");
 
-// button.addEventListener("click",()=>{
-//         button.classList.toggle("menu-button-active");
-//         menu.classList.toggle("menu-nav-active");
-//         if( body.style.overflow === "" ){
-//                 body.style.overflow = "hidden";
-//         }
-//         else{
-//                 body.style.overflow = "";
-//         }
-// });
-// }
+button.addEventListener("click",()=>{
+        button.classList.toggle("menu-button-active");
+        menu.classList.toggle("menu-nav-active");
+        if( body.style.overflow === "" ){
+                body.style.overflow = "hidden";
+        }
+        else{
+                body.style.overflow = "";
+        }
+});
+}
