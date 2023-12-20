@@ -249,6 +249,11 @@
     color: black;
     font-size: small;
 }
+@media (min-width: 1000px) {
+    .produto{
+        width: 200px;
+    }
+}
 @media(max-width:510px){
     .produto{
         width: 65vw;
